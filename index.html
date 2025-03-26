@@ -356,6 +356,85 @@
         font-size: 16px;
     }
 }
+	    /* RESPONSIVE DESIGN UNTUK LAYAR HP (MAX 480px) */
+@media (max-width: 480px) {
+    /* Navbar responsif */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 5px 0;
+    }
+    .navbar td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .navbar a {
+        padding: 8px;
+        font-size: 14px;
+        display: block;
+    }
+
+    /* Kontainer utama */
+    .biodata-table, .container, .documentation, .experience {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Teks lebih kecil agar tidak memenuhi layar */
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Gambar responsif */
+    .biodata-table img, .image-grid img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Tabel responsif */
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        font-size: 14px;
+    }
+    th, td {
+        padding: 10px;
+    }
+
+    /* Map responsif */
+    .map-container iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* Ikon sosial media lebih kecil */
+    .social-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-text {
+        font-size: 14px;
+    }
+
+    /* Menghindari elemen terlalu berdekatan */
+    .content-wrapper {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
 
     </style>
 </head>
